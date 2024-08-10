@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #b3e5fc;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #0277bd;
+  font-weight: bold;
+}
+
+/* Form Container Styles */
+.form-Container, .Register, .detail-container, .topContainer {
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #e1f5fe;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"], form input[type="password"], form input[type="file"], form input[type="submit"], .delete-prompt-container button {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid #81d4fa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"], .delete-prompt-container button {
+  background-color: #4fc3f7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover, .delete-prompt-container button:hover {
+  background-color: #0288d1;
+}
+
+/* Spinner Styles */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fa-spin {
+  font-size: 3em;
+  color: #4fc3f7;
+}
+
+/* Error Message Styles */
+.error-message {
+  text-align: center;
+  color: red;
+  background-color: #ffebee;
+  padding: 1em;
+  border: 1px solid #ef9a9a;
+  border-radius: 4px;
+}
+
+/* Blog Container Styles */
+.blog-container, .post-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.blog {
+  background-color: #ffffff;
+  padding: 1em;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.icon {
+  cursor: pointer;
+  color: #0288d1;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #01579b;
+}
+
+.newblog-btn {
+  background-color: #4fc3f7;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 1em 0;
+}
+
+.newblog-btn:hover {
+  background-color: #0288d1;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  background-color: #b3e5fc;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.not-loggedin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  background-color: #f7fbfc; /* Pastel blue */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.not-loggedin-container div {
+  font-size: 1.5em;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
